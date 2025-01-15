@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
 
     <div class="container mt-4">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5">
                 <div class="card">
                     <?php echo ' <img class="card-img-top img-fluid" src= "images/'.$produit['image'].'" alt="Card image cap">'?>
                     <div class="card-body">
@@ -38,15 +38,15 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
-                <h1 dir="rtl" class="text-danger" style="margin-top:15px;"> فوائد المنتوج :</h1>
-                <h6 dir="rtl" class="text" style="margin-top:15px;">
+            <div class="col-12 col-md-7">
+                <h1 dir="rtl" class="text-danger" style="margin-top:1px;"> فوائد المنتوج :</h1>
+                <h6 dir="rtl" class="text" style="margin-left:5px;margin-top:15px;">
                     <?php echo $produit['description']  ?>
                 </h6>
             </div>
         </div>
     </div>
-
+<br>
     <?php include "inc/footer.php"; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
